@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    font-size: 30px;
+    font-weight: bolder;
+    font-style: italic;
+}
+header{
+    display: flex;
+     justify-content: space-between;
+     background-color: brown;
+     padding: 20px;
+}
+.list{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+p:hover{
+    background-color: aliceblue;
+    color:brown;
+    font-size: 30px;
+    transition: 1s;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-style: italic;
+}
+.line{
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    margin: 5px;
+    border-radius: 12px;
+}
+.bar{
+    display: none;
+}
+.container{
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    .bar{
+        display: block;
+    }
+    .list{
+        position: absolute;
+        top: 75px;
+        background-color: brown;
+        width: 0;
+        height: 250px;
+        transition: 0.5s;
+        opacity: 0;
+        right:0;
+        display: block;
+        text-align: center;
+        
+    }
+    .shoe{
+        opacity: 1;
+        width:100%;
+    }
+    
+    p{
+        padding: 12px;
+    }
+    .line1.shoe-line1{
+        transform: rotate(-45deg)translate(-9px,-6px);
+    }
+    .line2.shoe-line2{
+        opacity: 0;
+    }
+    .line3.shoe-line3{
+        transform: rotate(45deg)translate(-20px,-6px);
+
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        font-size: 20px;
+        gap: 20px;
+    }
+    .hour,.min,.sec{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    
+
+    
+}
